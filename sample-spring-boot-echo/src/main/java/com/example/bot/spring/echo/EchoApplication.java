@@ -37,7 +37,7 @@ public class EchoApplication {
     public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
         System.out.println("event: " + event);
         if (event.getMessage().getText()=="幹")
-        	return new TextMessage("你好棒")
+        	return new TextMessage("你好棒");
         return null;
     }
 
