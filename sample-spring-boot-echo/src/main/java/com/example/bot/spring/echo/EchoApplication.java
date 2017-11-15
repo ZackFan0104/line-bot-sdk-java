@@ -38,7 +38,7 @@ public class EchoApplication {
         System.out.println("event: " + event);
         if (event.getMessage().getText()=="幹")
         	return new TextMessage("你好棒");
-        return null;
+        return new TextMessage("1");
     }
 
     @EventMapping
