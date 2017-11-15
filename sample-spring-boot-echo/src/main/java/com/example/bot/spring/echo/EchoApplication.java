@@ -48,6 +48,5 @@ public class EchoApplication {
     @EventMapping
     public void handleDefaultMessageEvent(Event event) {
         System.out.println("event: " + event);
-        return new DefaultMessage(event.getM)
     }
 }
