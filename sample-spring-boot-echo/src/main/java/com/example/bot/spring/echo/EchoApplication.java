@@ -36,13 +36,8 @@ public class EchoApplication {
     @EventMapping
     public TextMessage handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
         System.out.println("event: " + event);
-        if (event.getMessage().getText()=="你好"){
-        	return new TextMessage("我不好");
-        }
-        else if (event.getMessage().getText()=="幹"){
-        	return new TextMessage("為什麼要罵髒話!!");
-        }
-        
+        System.out.println("----- TEXT -----: " + event.getMessage().getText())
+        return new TextMessage(event.getMessage().getText());
     }
 
     @EventMapping
